@@ -1,0 +1,19 @@
+
+
+<header class="p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <p>{{ title}}</p>
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img src="../static/images/checklist.png">
+        </a>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-flex align-items-center" method="POST">
+          {{ form.hidden_tag() }}
+    {{ form.task_name(placeholder=form.task_name.label.text, class="form-control form-control-dark text-bg me-2") }}
+    {{ form.submit (class="btn btn-outline-light")  }}
+        </form>
+
+      </div>
+    </div>
+</header>
